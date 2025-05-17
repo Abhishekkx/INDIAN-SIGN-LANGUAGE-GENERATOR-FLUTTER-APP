@@ -1,0 +1,41 @@
+name: testing_isl
+description: ISL generator from audio-visual content
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  speech_to_text: ^7.0.0  # For microphone functionality
+  google_generative_ai: ^0.4.6  # For Gemini API integration
+  http: ^1.3.0
+  flutter_tts: ^4.2.2
+  permission_handler: ^11.0.1
+  camera: ^0.10.5+9
+  path_provider: ^2.1.2
+  path: ^1.8.3
+  image: ^4.0.15
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/isl_app_icon.png"
+
+flutter_tts: ^3.8.5
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/gestures/
+    - assets/icon/isl_app_icon.png
